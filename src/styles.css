@@ -1,5 +1,93 @@
-h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Mar 30, 2018, 2:28:06 PM
+    Author     : nikola
+*/
+
+   /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      /* background-color:rgb(198, 172, 78); */
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* .booking{
+    background-color: rgb(69, 49, 63);
+    padding: 20px;
+    font-family:inherit;
+    color: #fff;
+  } */
+
+  .first_content {
+      background-color: rgb(69, 49, 63);
+      color: #fff;
+      padding: 30px;
+      margin-bottom: 10px;
+  }
+
+  .second_content{
+    margin-top: 30px;
+    background-color: #808080;
+    color: #fff;
+    padding: 30px;
+  }
+
+.images img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .headline_room{
+    font-family: sans-serif;
+    font-size: 28px;
+    font-style: oblique;
+    margin-top: 45px;
+  }
+
+  .fooImg{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+  .paragraph{
+    text-indent: 25px;
+  }
+
+  .footerConnect{
+    background-color: #b3c4ff;
+    padding: 30px;
+  }
+  footer {
+    margin-top: 30px;
+  }
+
+  .carousel-inner  {
+    height:500px;
+  }
+.well_words{
+  color: black;
 }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }

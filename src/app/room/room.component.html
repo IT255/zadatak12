@@ -1,0 +1,33 @@
+
+
+
+<div class="container">
+  <h2>Pretraga Soba</h2>
+  <p>Ovde mozete pretraziti sobe prema broju kvadrata ili broju kreveta!</p>
+  <form class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search" name="cena"
+    [(ngModel)]="cena">
+    </div>
+  </form>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Tip Sobe</th>
+        <th>Br.kreveta</th>
+        <th>Br.kvadrata</th>
+        <th>sprat</th>
+        <th>cena</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let room of data  | SearchPipe : cena  : broj_kreveta">
+        <td>{{room.tip}}</td>
+        <td>{{room.broj_kreveta}}</td>
+        <td>{{room.broj_kvadrata}}</td>
+        <td>{{room.sprat}}</td>
+        <td>{{room.cena}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
